@@ -1,0 +1,115 @@
+/*
+#80BCF1
+#F3AF64
+#EC658E
+#6AE6CE
+#F1F1F1
+*/
+
+#Item {
+  background-color: #7CA0F3;
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  color: #fff;
+  display: flex;
+  transition: .5s margin-left;
+}
+
+#Item:hover {
+  /* border-left: 2px solid #7CA0F3; */
+  /* box-shadow: inset 5px 0px rgb(255, 255, 255, .5) !important; */
+  /* outline: 5px #7CA0F3; */
+  /* height: 160px; */
+  /* width: 150%; */
+  margin-left: 5px;
+}
+
+#Item .side-info {
+  display: flex;
+  padding: 30px 0% 5px 5%;
+  width: 70%;
+}
+
+#Item .side-info .container-info .info-text {
+  display: flex;
+}
+
+#Item .side-info>img {
+  background-color: green;
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+#Item .side-info .container-info {
+  padding-left: 15px;
+  width: 100%;
+}
+
+#Item .side-info .container-info .info-text div>p:first-of-type {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#Item .side-info .container-info .info-text div>p:not(:first-of-type) {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+#Item .side-info .container-info .list-info-numbers {
+  margin-top: 25px;
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+#Item .side-info .list-info-numbers li {
+  text-align: center;
+}
+
+#Item .side-info .list-info-numbers li:not(:first-of-type) {
+  margin-left: 10%;
+  text-align: center;
+}
+
+#Item .side-info .container-info .list-info-numbers li p:first-of-type {
+  font-size: 15px;
+}
+
+#Item .side-info .container-info .list-info-numbers li p:last-of-type {
+  font-size: 12px;
+}
+
+#Item .side-ranking {
+  width: 30%;
+  border-radius: 100% 15px 15px 0px;
+  background-color: #80B7F2;
+  text-align: center;
+}
+
+#Item .side-ranking button {
+  background-color: transparent;
+  margin-top: 25px;
+  margin-left: 35%;
+  color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+}
+
+#Item .side-ranking button span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  margin-right: 5px;
+}
+
+#Item .side-ranking p:first-of-type {
+  margin-top: 15px;
+  font-size: 25px;
+}
