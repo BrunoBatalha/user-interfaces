@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 import img from '../../assets/img/narutin.png';
-import ItemModel from './mode/Item';
+import ItemModel from './model/Item';
 
 interface ItemProps {
   item: ItemModel

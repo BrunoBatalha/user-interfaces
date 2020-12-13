@@ -21,6 +21,7 @@ body {
   margin: 0px auto;
   border: 5px solid #9580F4;
   border-radius: 50px;
+  box-shadow: -5px 5px 5px #afa4e2;
 }
 
 #One .container-list {
