@@ -1,50 +1,54 @@
 import React from 'react';
+
 import './style.css';
+import img from '../../assets/img/narutin.png';
+import ItemModel from './mode/Item';
 
 interface ItemProps {
-  dark: string,
-  light: string
+  item: ItemModel
 }
 
 const Item: React.FC<ItemProps> = (props) => {
-  const { dark, light } = props;
+  const { item } = props;
 
   return (
-    <div id="Item" style={{ backgroundColor: dark, boxShadow: `0 5px 10px ${light}` }}>
+    <div id="Item" style={{ backgroundColor: item.dark, boxShadow: `0 5px 10px ${item.light}` }}>
       <div className="side-info">
-        <img src="" alt="nome autor" />
+        <div className="container-image">
+          <img src={img} alt="nome autor" />
+        </div>
         <div className="container-info">
           <div className="info-text">
             <div>
-              <p>David Borg</p>
-              <p>Title: Flying Wings</p>
+              <p>{item.name}</p>
+              <p>{item.title}</p>
             </div>
           </div>
 
           <ul className="list-info-numbers">
             <li>
-              <p>2342</p>
+              <p>{item.popularity}</p>
               <p>Popularity</p>
             </li>
             <li>
-              <p>2342</p>
+              <p>{item.popularity}</p>
               <p>Popularity</p>
             </li>
             <li>
-              <p>2342</p>
+              <p>{item.popularity}</p>
               <p>Popularity</p>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="side-ranking" style={{ backgroundColor: light }}>
+      <div className="side-ranking" style={{ backgroundColor: item.light }}>
         <button type="button">
           <span>.</span>
           <span>.</span>
           <span>.</span>
         </button>
-        <p>1</p>
+        <p>{item.ranking}</p>
         <p>Raking</p>
       </div>
     </div>

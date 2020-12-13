@@ -36,16 +36,23 @@
   display: flex;
 }
 
-#Item .side-info>img {
+#Item .side-info>.container-image {
+  display: flex;
+  justify-content: center;
   background-color: green;
   width: 70px;
-  height: 60px;
-  border-radius: 50%;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+#Item .side-info>.container-image>img {
+  height: 100%;
 }
 
 #Item .side-info .container-info {
   padding-left: 15px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #Item .side-info .container-info .info-text div>p:first-of-type {

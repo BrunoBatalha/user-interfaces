@@ -1,0 +1,42 @@
+export const itens = [
+  {
+    name: 'Narutin',
+    title: 'Modo Sennin',
+    ranking: '1',
+    popularity: '99999',
+    dark: '#7CA0F3',
+    light: '#7FB6F2',
+  },
+  {
+    name: 'Narutin 2',
+    title: 'Modo Sennin',
+    ranking: '2',
+    popularity: '99999',
+    dark: '#EFA25D',
+    light: '#F4B066',
+  },
+  {
+    name: 'Narutin',
+    title: 'Modo Sennin',
+    ranking: '3',
+    popularity: '99999',
+    dark: '#EA5873',
+    light: '#EB678E',
+  },
+  {
+    name: 'Narutin',
+    title: 'Modo Sennin',
+    ranking: '4',
+    popularity: '99999',
+    dark: '#9580F4',
+    light: '#BE7AF4',
+  },
+  {
+    name: 'Narutin',
+    title: 'Modo Sennin',
+    ranking: '5',
+    popularity: '99999',
+    dark: '#68E0B7',
+    light: '#6BEBDC',
+  },
+];

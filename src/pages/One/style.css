@@ -1,10 +1,12 @@
-body {
-  background-color: #FBFCFF;
-}
-
 body, p, ul {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #d5caff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 * {
@@ -13,9 +15,39 @@ body, p, ul {
 }
 
 #One {
+  background-color: #FBFCFF;
   max-width: 500px;
+  max-height: calc(100vh - 20px);
+  overflow-y: scroll;
+  margin: 0px auto;
+  border: 5px solid #9580F4;
+  border-radius: 5px;
 }
 
 #One .container-list {
   padding: 0 5%;
+}
+
+/* STYLE SCROLL */
+
+#One::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+#One::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+#One::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+#One::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
