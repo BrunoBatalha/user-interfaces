@@ -15,6 +15,8 @@
   color: #fff;
   display: flex;
   transition: .5s margin-left;
+  position: relative;
+  overflow: hidden;
 }
 
 #Item:hover {
@@ -91,9 +93,34 @@
 
 #Item .side-ranking {
   width: 30%;
+  height: 100%;
   border-radius: 100% 15px 15px 0px;
   background-color: #80B7F2;
   text-align: center;
+}
+
+#Item .side-ranking.ripple {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  filter: opacity(0);
+  /* transition: left 5s; */
+}
+
+.animate-ripple {
+  animation: key-ripple .5s alternate;
+}
+
+@keyframes key-ripple {
+  50% {
+    filter: opacity(.5);
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #Item .side-ranking button {

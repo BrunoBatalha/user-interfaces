@@ -11,8 +11,18 @@ interface ItemProps {
 const Item: React.FC<ItemProps> = (props) => {
   const { item } = props;
 
+  function click(e: React.MouseEvent<HTMLButtonElement, MouseEvent>, ranking: string): void {
+    const elRipple: Element | null = document.querySelector(`#Item .ripple[data-ripple="${ranking}"]`);
+    if (elRipple) {
+      elRipple.classList.add('animate-ripple');
+      setTimeout(() => {
+        elRipple.classList.remove('animate-ripple');
+      }, 500);
+    }
+  }
+
   return (
-    <div id="Item" style={{ backgroundColor: item.dark, boxShadow: `0 5px 10px ${item.light}` }}>
+    <button type="button" onClick={(e) => click(e, item.ranking)} id="Item" style={{ backgroundColor: item.dark, boxShadow: `0 5px 10px ${item.light}` }}>
       <div className="side-info">
         <div className="container-image">
           <img src={img} alt="nome autor" />
@@ -41,7 +51,7 @@ const Item: React.FC<ItemProps> = (props) => {
           </ul>
         </div>
       </div>
-
+      <div className="side-ranking ripple" data-ripple={item.ranking} style={{ backgroundColor: item.light }} />
       <div className="side-ranking" style={{ backgroundColor: item.light }}>
         <button type="button">
           <span>.</span>
@@ -51,7 +61,7 @@ const Item: React.FC<ItemProps> = (props) => {
         <p>{item.ranking}</p>
         <p>Raking</p>
       </div>
-    </div>
+    </button>
   );
 };
 
