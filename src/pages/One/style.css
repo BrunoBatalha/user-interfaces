@@ -45,10 +45,37 @@ body {
   box-shadow: -5px 5px 5px #afa4e2;
 }
 
+#One .menu {
+  background-color: #9580F4;
+  padding: 0 5% 2.5% 5%;
+}
+
+#One .menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 50px;
+}
+
+#One .menu ul li {
+  margin-top: auto;
+  padding: 0 5%;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  transition: box-shadow .2s;
+}
+
+#One .menu ul li:hover {
+  box-shadow: 0 2px #fff;
+}
+
 #One .container-list {
   overflow-y: scroll;
   padding: 0 5% 5% 5%;
-  max-height: calc(100vh - 30px);
+  max-height: calc(100vh - 100px);
 }
 
 /* STYLE SCROLL */

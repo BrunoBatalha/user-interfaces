@@ -45,7 +45,7 @@
     "no-useless-constructor": "off",
     "no-underscore-dangle": "off",
     "no-use-before-define": [
-      "warn",
+      "off",
       {
         "functions": false,
         "classes": true
