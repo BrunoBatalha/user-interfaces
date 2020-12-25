@@ -5,7 +5,7 @@ import './style.css';
 import { itens } from './data';
 
 const One: React.FC = () => (
-  <div id="One">
+  <div id="One" className="mobile">
     <div className="menu">
       <ul>
         <li>Ranking</li>

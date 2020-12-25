@@ -1,48 +1,11 @@
-body, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-}
-
 body {
   background-color: #d5caff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #One {
   background-color: #FBFCFF;
-  max-width: 500px;
-  overflow: hidden;
-  margin: 0px auto;
   border: 5px solid #9580F4;
-  border-radius: 50px;
-  box-shadow: -5px 5px 5px #afa4e2;
+  box-shadow: -5px 5px 5px #a29eaf;
 }
 
 #One .menu {
